@@ -1,0 +1,31 @@
+.card-a{
+  text-decoration: none;
+  color: black;
+}
+.card:hover{
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  transition: all 0.3s;
+}
+.p-text-1{
+  position: absolute;
+  left: 475px;
+  top: 800px;
+}
+.p-text{
+  margin-bottom: 50px;
+}
+.h-icon{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  top: 58%;
+  left: 78%;
+  font-size: 22px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+}
