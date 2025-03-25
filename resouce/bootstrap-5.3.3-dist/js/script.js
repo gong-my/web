@@ -1,22 +1,29 @@
 function toggleLike(productId) {
-  // 좋아요 카운트 업데이트
-  var likeCount = document.getElementById("like-count-" + productId);
-  var likeText = document.getElementById("like-text-" + productId);
+  // 하트 아이콘을 찾기
+  var heartIcon = document.getElementById("heart-icon-" + productId);
 
-  var count = parseInt(likeCount.innerText);
+  // 모달 객체 가져오기
+  var myModal = new bootstrap.Modal(document.getElementById("likeModal"));
+  var modalTitle = document.getElementById("likeModalLabel");
+  var modalBody = document.getElementById("modal-body");
 
-  // "좋아요" 상태 변경
-  if (likeText.innerText === "좋아요") {
-    likeText.innerText = alert("취소 하였습니다");
-    count++;
+  // 하트 색상 변경: 빈 하트 -> 채워진 하트 또는 그 반대
+  if (heartIcon.classList.contains("ri-heart-line")) {
+    heartIcon.classList.remove("ri-heart-line"); // 빈 하트
+    heartIcon.classList.add("ri-heart-fill"); // 채워진 하트
+
+    // 모달 내용 설정
+    modalTitle.innerText = "좋아요 추가";
+    modalBody.innerText = "상품이 좋아요에 추가되었습니다!";
   } else {
-    likeText.innerText = alert("좋아요 추가 하였습니다");
-    count--;
+    heartIcon.classList.remove("ri-heart-fill"); // 채워진 하트
+    heartIcon.classList.add("ri-heart-line"); // 빈 하트
+
+    // 모달 내용 설정
+    modalTitle.innerText = "좋아요 취소";
+    modalBody.innerText = "상품의 좋아요가 취소되었습니다!";
   }
 
-  likeCount.innerText = count;
-
-  // 모달 띄우기
-  var myModal = new bootstrap.Modal(document.getElementById("likeModal"));
+  // 모달 표시
   myModal.show();
 }

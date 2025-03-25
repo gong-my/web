@@ -1,31 +1,76 @@
-.card-a{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.header {
+  border-bottom: 1px solid #559EA1;
+}
+
+.nav-1 {
+  border-bottom: 1px solid #559EA1;
+}
+
+.card-a {
   text-decoration: none;
   color: black;
 }
-.card:hover{
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+.card:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
 }
-.p-text-1{
+
+.p-text-1 {
   position: absolute;
-  left: 475px;
+  left: 270px;
   top: 800px;
 }
-.p-text{
+
+.pro-btn {
+  position: absolute;
+  background-color: #559EA1;
+  left: 1547px;
+  top: 797px;
+}
+
+.icon-1 {
+  position: absolute;
+  left: 1700px;
+  top: 830px;
+  color: #559EA1;
+  border: none;
+  background: none;
+}
+
+.icon-2 {
+  font-size: 20px;
+  position: absolute;
+  left: 1670px;
+  top: 826px;
+  color: #559EA1;
+  border: none;
+  background: none;
+}
+
+.p-text {
   margin-bottom: 50px;
 }
-.h-icon{
+
+.h-icon {
   position: absolute;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
   text-align: center;
-  top: 58%;
-  left: 78%;
-  font-size: 22px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 25px;
+  top: 90%;
+  left: 83%;
+  font-size: 30px;
   text-decoration: none;
-  color: black;
+  background: none;
+  border: none;
+  width: 0px;
+  height: 0px;
+}
+
+.ri-heart-line {
+  color: red;
+}
+
+.ri-heart-fill {
+  color: red;
 }
