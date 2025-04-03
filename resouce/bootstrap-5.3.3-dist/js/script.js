@@ -27,3 +27,14 @@ function toggleLike(productId) {
   // 모달 표시
   myModal.show();
 }
+$(function () {
+  // 메뉴 열기 버튼 클릭 시 메뉴 표시
+  $(".nav-pop").click(function () {
+    $(".nav__wrapper").addClass("active"); // 메뉴 열기
+  });
+
+  // 메뉴 닫기 버튼 클릭 시 메뉴 숨기기
+  $(".button--nav-close").click(function () {
+    $(".nav__wrapper").removeClass("active"); // 메뉴 닫기
+  });
+});

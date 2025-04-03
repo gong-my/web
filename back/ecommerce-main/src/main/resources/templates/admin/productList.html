@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="searchArea">
+            <table>
+                <colgroup>
+                    <col width="25%"/>
+                    <col width="*"/>
+                    <col width="10%"/>
+                </colgroup>
+                <tr>
+                    <th>진행구분</th>
+                    <td colspan="2"2>
+                        <input type="checkbox" value="0"/> 전체
+                        <input type="checkbox" value="1"/> 진행
+                        <input type="checkbox" value="2"/> 마감
+                        <input type="checkbox" value="3"/> 입금완료
+                        <input type="checkbox" value="4"/> 종결
+                    </td>
+                </tr>
+                <tr>
+                    <th>기간검색</th>
+                    <td colspan="2">
+                        <select name="searchKey">
+                            <option value="0">접수일</option>
+                            <option value="1">마감일</option>
+                            <option value="2">낙찰일</option>
+                        </select>
+                        시작일 <input type="text" id="searchStartDtm" value=""/>
+                        종료일 <input type="text" id="searchEndDtm" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>검색어</th>
+                    <td colspan="2">
+                        <select name="searchCategort">
+                            <option value="0">접수일</option>
+                            <option value="1">마감일</option>
+                            <option value="2">낙찰일</option>
+                        </select>
+                        <input type="text" id="searchWord" value=""/>
+                    </td>
+                    <td>
+                        <button type="submit">검색</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="listarea">
+            <table>
+                <colgroup>
+                </colgroup>
+                <tr>
+                    <!-- <c:forEach var="list" items="sdfasdfasdf">
+                        <th><input type="text" id="productId_${list.id}" value="${list.id}"/></th>
+                        <th><input type="text" id="endDtm_${list.id}" value="${list.id}"/></th>
+                        <th><input type="text" id="productId_${list.id}" value="${list.id}"/></th>
+                        <th><input type="text" id="productId_${list.id}" value="${list.id}"/></th>
+                        <th><input type="text" id="productId_${list.id}" value="${list.id}"/></th>
+
+
+                        </c:forEach> -->
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

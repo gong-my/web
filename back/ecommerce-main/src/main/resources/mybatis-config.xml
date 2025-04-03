@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+  <configuration>
+  		<settings>
+        <!-- camel case 세팅 -->
+  			<setting name="mapUnderscoreToCamelCase" value="true" />
+	  		<!-- <setting name="logImpl" value="LOG4J" /> -->
+  		</settings>
+
+
+		<!-- application.yml 에 세팅함 -->
+		<!-- 별칭 세팅 -->
+		<!-- <typeAliases>
+			<typeAlias type="com.ecommerce.project.mappers.UserMapper" alias="userDTO"/>
+		</typeAliases> -->
+  </configuration>

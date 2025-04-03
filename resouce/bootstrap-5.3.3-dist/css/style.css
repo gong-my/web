@@ -3,7 +3,15 @@
 .header {
   border-bottom: 1px solid #559EA1;
 }
-
+.icon-3{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+.nav-pop{
+  padding: auto;
+  margin: auto;
+}
 .nav-1 {
   border-bottom: 1px solid #559EA1;
 }
@@ -73,4 +81,74 @@
 
 .ri-heart-fill {
   color: red;
+}
+
+.category-box {
+  margin: 200px 0px;
+
+}
+
+.category-list {
+  justify-content: center;
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+.category-item {
+
+  margin: 25px;
+}
+
+.category-item img {
+  border-radius: 50%;
+  border: 1px solid #559EA1;
+  background-color: #ddd;
+}
+/* 내비게이션 메뉴 기본 스타일 */
+.nav__wrapper {
+  display: none;  /* 기본적으로 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;  /* 메뉴 너비 */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);  /* 배경색 */
+  color: white;
+  padding: 20px;
+  z-index: 999;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);  /* 기본적으로 화면 밖에 배치 */
+}
+
+/* 메뉴가 열렸을 때 표시 */
+.nav__wrapper.active {
+  transform: translateX(0);  /* 메뉴가 화면에 보이게 됨 */
+  display: block;  /* 메뉴를 보이게 처리 */
+  width: 400px;
+}
+
+/* 닫기 버튼 스타일 */
+.button--nav-close {
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* 메뉴 버튼 기본 스타일 */
+.nav-pop {
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+.nav__logo {
+  font-size: 30px;
+  font-weight: bold;
+  width: 200px;
 }
